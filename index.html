@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Taller Eventos</title>
-    <script src="eventos.js" defer></script>
-  </head>
-  <body>
-    <button id="saludarBtn">Saludar</button>
-    <div id="divContainer" style="padding: 5px; background-color: green;">
-        <button id="saludarButton" onclick="alert('Hola!')">Saludar</button>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="eventos.js"></script>
+<title>Taller-Eventos</title>
+<style>
+    .boton-con-fondo {
+        padding: 5px;
+        background-color: green;
+    }
+</style>
+</head>
+<body>
+    <h1>Saludar</h1>
+    <div class="boton-con-fondo">
+    <button onclick="mostrarAlerta()">Saludar</button>
+    <script>
+        function mostrarAlerta() {
+            alert("Hola!");
+        }
+    </script>
     </div>
-  </body>
+</body>
 </html>
